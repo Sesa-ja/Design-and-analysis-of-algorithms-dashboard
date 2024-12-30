@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branch and Bound - TSP</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <link rel="stylesheet" href="CSS/branchTSP.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">View_list</div>
+            <div class="search-bar">
+                <i class="material-icons-outlined">search</i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <nav>
+                <ul>
+                    <li><i class="material-icons-outlined">dashboard</i> <a href="Index.html"
+                            style="color:white">Dashboard</a></li>
+                    <li><i class="material-icons-outlined">calculate</i> Greedy Algorithm</li>
+                    <li><i class="material-icons-outlined">functions</i> Dynamic Programming</li>
+                    <li><i class="material-icons-outlined">grid_view</i> <span>Approximation Algorithms</span></li>
+                    <li><i class="material-icons-outlined">grid_view</i> <span style="color: blue;">Branch and Bound
+                            (TSP)</span></li>
+                    <li><i class="material-icons-outlined">dashboard</i> Heuristic Algorithms</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <h1>Dashboard</h1>
+            <header>
+                <div class="algorithms">
+                    <div class="algorithm genetic"><a href="#">Genetic Algorithm</a></div>
+                    <div class="algorithm ant"><a href="Branch(TSP).html">Branch and Bound (TSP)</a></div>
+                    <div class="algorithm bee"><a href="#">TSP (Nearest-N-A)</a></div>
+                    <div class="algorithm brute"><a href="#">Brute Force Algorithm</a></div>
+                </div>
+            </header>
+
+            <h1>Traveling Salesman Problem - Branch and Bound</h1>
+            <div id="canvasContainer">
+                <div id="tspCanvas"></div>
+            </div>
+            <div id="controls">
+                <label for="cityCount">Number of Cities:</label>
+                <input type="number" id="cityCount" value="5" min="2" max="10">
+                <button id="generateButton">Generate Cities</button>
+                <button id="solveButton">Solve TSP</button>
+                <button id="resetButton">Reset</button>
+            </div>
+            <div id="output" style="display: flex; justify-content: center; align-items: center;">
+                <p id="costDisplay" style="background-color: blue; border-radius: 5px; padding: 10px; margin-right: 10px;">
+                    Minimum Cost: 
+                </p>
+                <p id="pathDisplay" style="background-color: orange; border-radius: 5px; padding: 10px;">
+                    Optimal Path: 
+                </p>
+            </div>
+
+        </main>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img src="photos/logo.png" alt="Logo">
+        </div>
+        <div class="social-media">
+            <p>Follow Us:</p>
+            <ul>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+        <p>© All rights reserved</p>
+    </footer>
+
+    <script src="Js/branchTSP.js"></script>
+</body>
+
+</html>

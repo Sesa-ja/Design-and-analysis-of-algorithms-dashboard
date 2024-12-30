@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <span class="material-icons-outlined">view_list</span> View_list
+            </div>
+            <ul class="sidebar-menu">
+                <li><span class="material-icons-outlined">chevron_right</span> <a href="Index.html" style="color: white;">Dashboard</a></li>
+                <li><span class="material-icons-outlined">chevron_right</span> <a href="Greedy.html" style="color: white;">Greedy Algorithm</a></li>
+                <li><span class="material-icons-outlined">chevron_right</span> <a href="Dp.html" style="color: white;">Dynamic Programming</a></li>
+                <li><span class="material-icons-outlined">chevron_right</span> <a href="TSPNNA.html" style="color: white;">Approximation Algorithms</a> </li>
+                <li><span class="material-icons-outlined">chevron_right</span> <a href="Branch(TSP).html" style="color: white;">Branch & Bound Algorithms</a></li>
+                <li><span class="material-icons-outlined">chevron_right</span> <a href="HeuristicGen.html" style="color: white">Heuristic Algorithms</a></li>
+            </ul>
+        </aside>
+        
+        <main class="main-content">
+            <header class="dashboard-header">
+                <div class="title">DASHBOARD</div>
+                <div class="icons">
+                    <span class="material-icons-outlined">search</span>
+                    <span class="material-icons-outlined">notifications</span>
+                    <span class="material-icons-outlined">email</span>
+                </div>
+            </header>
+            
+            <section class="dashboard-tiles">
+                <div class="tile tile-blue"><a href="Greedy.html">Greedy Algorithm</a></div>
+                <div class="tile tile-orange"><a href="Dp.html">Dynamic Programming</a></div>
+                <div class="tile tile-green"><a href="TSPNNA.html">Approximation Algorithms</a></div>
+                <div class="tile tile-red"><a href="HeuristicGen.html">Heuristic Algorithms</a></div>
+            </section>
+            
+            <section class="charts">
+                <div class="chart">
+                    <h3>Time Complexity Chart</h3>
+                    <canvas id="timeComplexityChart"></canvas>
+                </div>
+                <div class="chart">
+                    <h3>Function growth chart</h3>
+                    <canvas id="functionChart"></canvas>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="logo">
+            <img src="photos/logo.png" alt="Logo">
+        </div>
+        <div class="social-media">
+            <p>Follow Us:</p>
+            <ul>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">LinkedIn</a></li>     
+            </ul>
+        </div>
+        <p>© All rights reserved</p>
+    </footer>
+   
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="Js/script.js"></script>
+</body>
+</html>

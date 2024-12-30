@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1d2b44;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #2a3c61;
+    padding: 20px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.sidebar-header .material-icons-outlined {
+    margin-right: 10px;
+}
+
+.sidebar-menu {
+    list-style: none;
+}
+
+.sidebar-menu li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.sidebar-menu li .material-icons-outlined {
+    margin-right: 10px;
+}
+
+.main-content {
+    width: 80%;
+    padding: 20px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-header .title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.dashboard-header .icons {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-header .icons span {
+    margin-left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.dashboard-tiles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.tile {
+    width: 23%;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.tile-blue {
+    background-color: blue;
+}
+
+.tile-orange {
+    background-color: #b8780a;
+}
+
+.tile-green {
+    background-color: #0c8059;
+}
+
+.tile-red {
+    background-color: #ab2424;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart {
+    width: 48%;
+}
+
+.chart canvas {
+    width: 100%;
+    height: 250px;
+}
+
+h3 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #181a1f;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 120px; /* Adjust the width of the logo as needed */
+    height: auto;
+}
+
+.social-media {
+    text-align: left;
+}
+
+.social-media p {
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media li {
+    margin: 5px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

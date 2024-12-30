@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1b1e25;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2f343f;
+  height: 100vh;
+  padding: 20px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-bottom: 1px solid #ccc;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+nav ul li i {
+  margin-right: 10px;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.algorithms {
+  display: flex;
+  gap: 15px;
+}
+
+.algorithm {
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.genetic {
+  background-color: #287aff;
+}
+
+.ant {
+  background-color: #ff7528;
+}
+
+.bee {
+  background-color: #1ec969;
+}
+
+.brute {
+  background-color: #f44336;
+}
+
+.canvas-container {
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  height: 300px;
+  background-color: #2e333b;
+  border-radius: 10px;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+canvas {
+  border: 2px solid black;
+  border-radius: 15px; /* Rounded corners for canvas */
+}
+
+#controls {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px; /* Adds spacing between buttons */
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Color styling for buttons */
+#startButton {
+  background-color: green;
+}
+
+#pauseButton {
+  background-color: orange;
+}
+
+#resetButton {
+  background-color: red;
+}
+
+canvas {
+  display: block;
+  background-color: #272626;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: black;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #181a1f;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logo img {
+  width: 120px; /* Adjust the width of the logo as needed */
+  height: auto;
+}
+
+.social-media {
+  text-align: left;
+}
+
+.social-media p {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-media li {
+  margin: 5px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

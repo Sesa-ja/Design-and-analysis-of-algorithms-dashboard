@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0/1 Knapsack Problem - Dynamic Programming Approach</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Dp.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <span class="material-icons-outlined">view_list</span>View_list
+            </div>
+            <div class="sidebar-header">
+               <a href="Index.html" style="color: white"><span class="material-icons-outlined">view_list</span> Dashboard</a> 
+            </div>
+            <ul class="menu">
+                <li><span class="material-icons-outlined">playlist_add_check</span> Greedy Algorithm</li>
+                <li class="active"><span class="material-icons-outlined">dashboard</span> <span style="color: blue;">Dynamic Programming</span> </li>
+                <li><span class="material-icons-outlined">extension</span> Approximation Algorithms</li>
+                <li><span class="material-icons-outlined">bubble_chart</span> Graph Algorithms</li>
+                <li><span class="material-icons-outlined">functions</span> Heuristic Algorithms</li>
+            </ul>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <div class="header">
+                <h1>Dashboard</h1>
+                <div class="icons">
+                    <span class="material-icons-outlined" style="color: white;">search</span>
+                    <span class="material-icons-outlined" style="color: white;">notifications_none</span>
+                    <span class="material-icons-outlined" style="color: white;">account_circle</span>
+                </div>
+            </div>
+
+            <!-- Knapsack Problem Section -->
+            <section>
+                <h2>0/1 Knapsack Problem - Dynamic Programming Approach</h2>
+                <div class="controls">
+                    <label>Number of Items <input type="number" id="numItems" min="1" max="10" value="3"></label>
+                    <label>Knapsack Capacity <input type="number" id="capacity" min="1" value="5"></label>
+                </div>
+                <div class="button">
+                    <button id="startBtn"><span style="color: white; font-family:Georgia, 'Times New Roman', Times, serif;">Start Simulation</span> </button>
+                    <button id="resetBtn" class="reset"><span style="color: white; font-family:Georgia, 'Times New Roman', Times, serif;"> Reset</span></button>
+                    <button id="delayBtn"><span style="color: white; font-family:Georgia, 'Times New Roman', Times, serif;">Start with Delay</span></button>
+                    <label>Delay (ms): <input type="number" id="delayInput" min="0" value="500"></label>
+                </div>
+                <!-- Item Table -->
+                <div class="table-section">
+                    <h3 style="color: white; font-family:Georgia, 'Times New Roman', Times, serif;">Enter Values:</h3>
+                    <table id="itemTable">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Weight</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody id="item-rows">
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- DP Table Visualization -->
+                <div class="dp-table-section">
+                    <h3 style="color: white; font-family: 'Times New Roman', Times, serif;">Dynamic Programming Table: Visualization</h3>
+                    <table id="dpTable">
+                        <thead>
+                            <tr id="dp-table-head">
+                            </tr>
+                        </thead>
+                        <tbody id="dp-table-body">
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Results -->
+                <div id="results" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+                    <p id="maxContainer" style="background-color: red; border-radius: 5px; padding: 10px; margin-right: 10px;">
+                        Maximum Container: 
+                    </p>
+                    <p id="totalWeight" style="background-color: green; border-radius: 5px; padding: 10px; margin-right: 10px;">
+                        Total Weight: 
+                    </p>
+                    <p id="totalValue" style="background-color: black; color: white; border-radius: 5px; padding: 10px; margin-right: 10px;">
+                        Total Value: 
+                    </p>
+                    <p id="selectedItems" style="background-color: blue; border-radius: 5px; padding: 10px;">
+                        Selected Items: 
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Footer -->
+            <footer>
+                <div class="logo">
+                    <img src="photos/logo.png" alt="Logo">
+                </div>
+                <div class="social-media">
+                    <p>Follow Us:</p>
+                    <ul>
+                        <li><a href="#">Github</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">LinkedIn</a></li>     
+                    </ul>
+                </div>
+                <p>© All rights reserved</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="Js/Dp.js"></script>
+</body>
+</html>
